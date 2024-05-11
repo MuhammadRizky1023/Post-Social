@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UI.RegisterActivity">
+
+        <FrameLayout
+            android:id="@+id/fl_header_image"
+            style="@style/frameLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/imageView"
+                android:src="@drawable/background" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tvTitle"
+            android:text="@string/register"
+            android:textSize="@dimen/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_header_image" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/textView"
+            android:layout_marginStart="@dimen/margin_form"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="@dimen/width_form"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_form"
+            android:layout_marginEnd="@dimen/margin_form"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            >
+
+            <com.example.postsocial.customview.MyNameText
+                android:id="@+id/ed_name_register"
+                style="@style/customView"
+                android:ems="10"
+                android:hint="Enter Username"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/textView"
+            android:layout_marginStart="@dimen/margin_form"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_name"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="@dimen/width_form"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_form"
+            android:layout_marginEnd="@dimen/margin_form"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            >
+
+
+            <com.example.postsocial.customview.MyEmailText
+                android:id="@+id/ed_email_register"
+                style="@style/customView"
+                android:ems="10"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_password"
+            style="@style/textView"
+            android:layout_marginStart="@dimen/margin_form"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_email"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="@dimen/width_form"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_form"
+            android:layout_marginEnd="@dimen/margin_form"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_password"
+            tools:alpha="1"
+            >
+
+            <com.example.postsocial.customview.MyPasswordText
+                android:id="@+id/ed_password_register"
+                style="@style/customView"
+                android:ems="10"
+                android:hint="Enter Password"
+                app:passwordToggleEnabled="true"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/button"
+            android:background="@drawable/button_background"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_form"
+            android:text="@string/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_password" />
+
+        <LinearLayout
+            style="@style/linearLayoutForm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_register">
+
+            <TextView
+                android:id="@+id/tv_don_t_have_an_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/account"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:text="@string/login"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading_progress_bar"
+            style="@style/LoadingProgressBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

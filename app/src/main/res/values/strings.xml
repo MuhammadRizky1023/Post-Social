@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Post Social</string>
+    <string name="package_name">com.example.postsocial</string>
+    <string name="input_email">Please input your email address</string>
+    <string name="password_length">Password length must be six characters.</string>
+    <string name="the_user_created">This account was created successfully</string>
+    <string name="error_message">Error message :</string>
+    <string name="login_successfully">The user login is successfully</string>
+    <string name="this_account_unauthorized">This account  is unauthorized</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="check_no">No</string>
+    <string name="check_yes">Yes</string>
+    <string name="choose_your_image_file">Select the file you want to upload.</string>
+    <string name="from_gallery">From Your gallery</string>
+    <string name="take_picture">Take a picture</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_photo">Select Your Photo</string>
+    <string name="error_loading">Failed to load your data :</string>
+    <string name="detail_name">Detail Name</string>
+    <string name="detail_desc">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, lorem ipsum dolor sit amet.Quis nostrud exercise ullamco laboris nisi ut aliquip ex ea commodo consequat ut enim ad minim veniam.Duis aute irure pity in understanding in voluptate velit esse cillum pity eu fugiat nulla pariaturExcept for the occasional cupidatat that does not occur, there is a responsibility on the part of the official whose work is laborious..</string>
+    <string name="detail_date">01/10/2022</string>
+    <string name="name_is_empty">Please input your name</string>
+    <string name="email_is_empty">Please Input your  email</string>
+    <string name="password_is_empty">Please input your password</string>
+    <string name="input_desc">Please  input your description</string>
+    <string name="choose_picture">Choose your picture</string>
+    <string name="input_picture">Please input your image file</string>
+    <string name="message">Your message :</string>
+    <string name="post_as">Post as your Story</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login">Sgn In</string>
+    <string name="no_account">Do you do not have Account?</string>
+    <string name="account">Already have an account?</string>
+    <string name="register">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="language">Language</string>
+    <string name="check_logOut">LogOut</string>
+    <string name="tolls_password">123456</string>
+    <string name="tolls_name">Muhammad Rizky</string>
+    <string name="tolls_email">muhammadrizky102356@gmail.com</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="valid_email_address">Please input a valid email address</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

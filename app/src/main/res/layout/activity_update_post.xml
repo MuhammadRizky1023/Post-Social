@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        tools:context=".UpdatePostActivity">
+
+        <TextView
+            android:id="@+id/tv_update_name"
+            style="@style/textView"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="@dimen/text_size_form"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="name" />
+
+        <ImageView
+            android:id="@+id/iv_update_photo"
+            style="@style/addImage"
+            android:adjustViewBounds="true"
+            android:background="@drawable/boarder_line"
+            android:src="@drawable/ic_camera_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_update_name" />
+
+        <EditText
+            android:id="@+id/ed_update_desc"
+            style="@style/addDesc"
+            android:autofillHints="Description"
+            android:background="@drawable/boarder_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_update_photo"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="upload"
+            android:background="@drawable/button_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_update_desc" />
+
+        <ProgressBar
+            android:id="@+id/loading_progress_bar"
+            style="@style/LoadingProgressBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

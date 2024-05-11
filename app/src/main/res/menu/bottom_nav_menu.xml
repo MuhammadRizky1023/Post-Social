@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_list_post"
+        android:icon="@drawable/ic_vector_dashboard"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_vector_person"
+        android:title="@string/title_profile" />
+
+
+</menu>

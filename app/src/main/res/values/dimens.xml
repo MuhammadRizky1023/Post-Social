@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_form">32dp</dimen>
+    <dimen name="margin_top">24dp</dimen>
+    <dimen name="text_size_form">20sp</dimen>
+    <dimen name="width_form">0dp</dimen>
+    <dimen name="tv_title">25sp</dimen>
+</resources>

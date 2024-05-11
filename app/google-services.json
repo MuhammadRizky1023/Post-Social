@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27340443351",
+    "project_id": "postsocial-63453",
+    "storage_bucket": "postsocial-63453.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27340443351:android:0565409403887761c12a92",
+        "android_client_info": {
+          "package_name": "com.example.postsocial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCimGLnsHJEobrM55bomIZXAzDeXIXKhEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
